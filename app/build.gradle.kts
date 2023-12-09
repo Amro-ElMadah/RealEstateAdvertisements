@@ -74,6 +74,7 @@ dependencies {
     implementation(libs.network.retrofit)
     implementation(libs.network.retrofitGson)
     implementation(libs.image.coil)
+    implementation(libs.memory.leak.canary)
 }
 
 // Allow references to generated code

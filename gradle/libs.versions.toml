@@ -1,9 +1,10 @@
 [versions]
 agp = "8.3.0-alpha14"
 hiltAndroid = "2.44"
-coroutinesVersion = "1.5.2"
+coroutinesVersion = "1.6.4"
 retrofitVersion = "2.9.0"
-coilVersion = "1.3.2"
+coilVersion = "2.2.2"
+leakCanaryVersion = "1.3.2"
 kotlin = "1.9.0"
 coreKtx = "1.12.0"
 junit = "4.13.2"
@@ -34,6 +35,7 @@ threading-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-andr
 network-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
 network-retrofitGson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVersion" }
 image-coil = { module = "io.coil-kt:coil-compose", version.ref = "coilVersion" }
+memory-leak-canary = { module = "com.squareup.leakcanary:leakcanary-android-gradle-plugin", version.ref = "leakCanaryVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
