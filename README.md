@@ -15,3 +15,4 @@ Task for android developer role
 * Android Architecture Component
 * MVVM with Clean Code
 * Leak Canary
+* Unit and UI tests
