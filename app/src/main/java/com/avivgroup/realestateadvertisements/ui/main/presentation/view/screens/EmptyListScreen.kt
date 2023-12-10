@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import com.avivgroup.realestateadvertisements.R.string
 
 @Composable
@@ -19,7 +20,8 @@ fun EmptyListScreen() {
     ) {
         Text(
             text = stringResource(id = string.no_data),
-            style = MaterialTheme.typography.bodyLarge
+            style = MaterialTheme.typography.bodyLarge,
+            textAlign = TextAlign.Center,
         )
     }
 }
