@@ -1,16 +1,28 @@
 [versions]
-agp = "8.3.0-alpha14"
-kotlin = "1.9.0"
+accompanistSwiperefresh = "1.0"
+agp = "8.1.4"
+hiltAndroid = "2.48"
+coroutinesVersion = "1.7.1"
+material = "1.4.0-beta01"
+retrofitVersion = "2.9.0"
+retrofitInterceptorLoggingVersion = "4.9.0"
+coilVersion = "2.4.0"
+leakCanaryVersion = "2.12"
+kotlin = "1.8.10"
 coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.6.2"
-activityCompose = "1.7.0"
-composeBom = "2023.08.00"
+activityCompose = "1.8.1"
+composeBom = "2023.10.01"
 
 [libraries]
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -24,8 +36,15 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+threading-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutinesVersion" }
+network-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
+network-retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitVersion" }
+network-retrofit-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "retrofitInterceptorLoggingVersion" }
+image-coil = { module = "io.coil-kt:coil-compose", version.ref = "coilVersion" }
+memory-leak-canary = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakCanaryVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+daggerHiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 

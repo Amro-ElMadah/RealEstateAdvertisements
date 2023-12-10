@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">RealEstateAdvertisements</string>
+    <string name="network_error">You have issue in your internet connection</string>
+    <string name="no_data">"There's no real estates at the moment, please try again later"</string>
+    <string name="retry">Retry</string>
+
+    <!--Real Estate Item-->
+    <string name="price">Price: %s</string>
+    <string name="city">City: %s</string>
+    <string name="area_size">Area size: %s m</string>
+    <string name="number_of_rooms">Number of rooms: %s</string>
 </resources>
