@@ -9,4 +9,9 @@
     <string name="city">City: %s</string>
     <string name="area_size">Area size: %s m</string>
     <string name="number_of_rooms">Number of rooms: %s</string>
+
+    <!--Real Estate Details screen-->
+    <string name="professional">Professional: %s</string>
+    <string name="number_of_bedrooms">Number of bedrooms: %s</string>
+    <string name="property_type">Property type: %s</string>
 </resources>
