@@ -4,6 +4,7 @@ import com.avivgroup.realestateadvertisements.data.remote.network.retrofit.RealE
 import com.avivgroup.realestateadvertisements.ui.main.data.remote.RealEstatesRemoteDataSource
 import com.avivgroup.realestateadvertisements.ui.main.domain.repository.RealEstatesRepository
 import com.avivgroup.realestateadvertisements.ui.main.domain.repository.RealEstatesRepositoryImp
+import com.avivgroup.realestateadvertisements.ui.main.domain.usecases.GetRealEstateDetailsUseCase
 import com.avivgroup.realestateadvertisements.ui.main.domain.usecases.GetRealEstatesUseCase
 import dagger.Module
 import dagger.Provides
@@ -27,4 +28,8 @@ open class RealEstatesModule {
     @Provides
     fun provideGetRealEstatesUseCase(repository: RealEstatesRepository) =
         GetRealEstatesUseCase(repository)
+
+    @Provides
+    fun provideGetRealEstateDetailsUseCase(repository: RealEstatesRepository) =
+        GetRealEstateDetailsUseCase(repository)
 }
