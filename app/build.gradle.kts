@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.network.retrofit.gson)
     implementation(libs.network.retrofit.logging.interceptor)
     implementation(libs.androidx.material)
+    implementation(libs.image.coil)
 }
 
 // Allow references to generated code
